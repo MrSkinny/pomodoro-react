@@ -1,0 +1,150 @@
+body {
+  background-image: url("http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-26641.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header > h1 {
+  font-family: Serif;
+  font-size: 50px;
+}
+
+#middle {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#theClock {
+  border-width: 2px;
+  border-color: #D8D8D8;
+  border-style: solid;
+  border-radius: 200px;
+  width: 350px;
+  height: 350px;
+  background-color: rgba(0, 0, 0, 0.5);
+  float: left;
+  margin-left: 120px;
+}
+
+#contentClock {
+  text-align: center;
+  margin-top: 95px;
+}
+
+#time {
+  font-family: Helvetica;
+  font-size: 80px;
+}
+
+#clasiff {
+  font-family: Monospace;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#timeSelection {
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+}
+
+#timeSelection button {
+  background-color: rgba(0, 0, 0 , 0);
+  border-width: 0;
+}
+
+#minusBreak, #plusBreak, #minusTimer, #plusTimer {
+  font-size: 25px;
+  font-family: Monospace;
+}
+
+#breakTime, #timerTime {
+  font-family: Serif;
+  font-size: 23px;
+}
+
+#minusBreak, #minusTimer {
+  margin-right: 10px;
+}
+
+#plusBreak, #plusTimer {
+  margin-left: 10px;
+}
+
+#timeSelection p > span {
+  margin-left: 50px;
+  margin-right: 45px;
+  font-family: Monospace;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#minusTimer {
+  margin-left: 100px;
+}
+
+#btnsTime {
+  color: black;
+  float: right;
+  margin-top: 30px;;
+}
+
+.buttons {
+  margin-top: 25px;
+  width: 100px;
+  -webkit-box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 20px 3px rgba(0,0,0,0.75);
+}
+
+#start {
+  background: rgba(98,125,77,1);
+  background: -moz-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)));
+  background: -webkit-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+  background: -o-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+  background: -ms-linear-gradient(left, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+  background: linear-gradient(to right, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1 );
+  border-color: darkgreen;
+  color: #CEF6CE;
+}
+
+#pause {
+  background: rgba(245,139,10,1);
+  background: -moz-linear-gradient(left, rgba(245,139,10,1) 0%, rgba(128,74,9,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(245,139,10,1)), color-stop(100%, rgba(128,74,9,1)));
+  background: -webkit-linear-gradient(left, rgba(245,139,10,1) 0%, rgba(128,74,9,1) 100%);
+  background: -o-linear-gradient(left, rgba(245,139,10,1) 0%, rgba(128,74,9,1) 100%);
+  background: -ms-linear-gradient(left, rgba(245,139,10,1) 0%, rgba(128,74,9,1) 100%);
+  background: linear-gradient(to right, rgba(245,139,10,1) 0%, rgba(128,74,9,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f58b0a', endColorstr='#804a09', GradientType=1 );
+  border-color: darkorange;
+  color: #F5ECCE;
+}
+
+#reset {
+  background: rgba(168,3,3,1);
+  background: -moz-linear-gradient(left, rgba(168,3,3,1) 0%, rgba(143,2,34,1) 44%, rgba(105,0,0,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(168,3,3,1)), color-stop(44%, rgba(143,2,34,1)), color-stop(100%, rgba(105,0,0,1)));
+  background: -webkit-linear-gradient(left, rgba(168,3,3,1) 0%, rgba(143,2,34,1) 44%, rgba(105,0,0,1) 100%);
+  background: -o-linear-gradient(left, rgba(168,3,3,1) 0%, rgba(143,2,34,1) 44%, rgba(105,0,0,1) 100%);
+  background: -ms-linear-gradient(left, rgba(168,3,3,1) 0%, rgba(143,2,34,1) 44%, rgba(105,0,0,1) 100%);
+  background: linear-gradient(to right, rgba(168,3,3,1) 0%, rgba(143,2,34,1) 44%, rgba(105,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80303', endColorstr='#690000', GradientType=1 );
+  border-color: darkred;
+  color: #F6CECE;
+}
+
+footer {
+  text-align: center;
+  margin-top: 35px;
+  font-family: Monospace;
+  font-style: italic;
+}
