@@ -7,6 +7,9 @@ module.exports = {
         "import"
     ],
     "rules": {
-        "react/jsx-filename-extension": 0
+        "react/jsx-filename-extension": 0,
+        "react/prefer-stateless-function": 1,
+        "class-methods-use-this": 0,
+        "max-len": 0
     }
 };
