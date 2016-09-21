@@ -12,6 +12,7 @@ module.exports = {
         "class-methods-use-this": 0,
         "max-len": 0,
         "space-before-function-paren": 0,
-        "comma-dangle": 0
+        "comma-dangle": 0,
+        "no-shadow": 1
     }
 };
