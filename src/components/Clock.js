@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
 
 import TimeSelection from './TimeSelection';
+import ClockDisplay from './ClockDisplay';
 
-export default function () {
+const propTypes = {
+  currentSessionTime: PropTypes.number.isRequired
+};
+
+function Clock ({ currentSessionTime }) {
+  console.log('clock rendering?');
   return (
     <div className="container">
       <article>
@@ -13,10 +20,7 @@ export default function () {
           <div className="row">
             <div className="col-xs-12 col-md-12">
               <section id="theClock">
-                <div id="contentClock">
-                  <span id="time"><span id="minutes">25</span>: <span id="seconds">00</span></span><br />
-                  <span id="clasiff">Session</span>
-                </div>
+                <ClockDisplay time={currentSessionTime} />
               </section>
               <section id="btnsTime">
                 <button className="btn btn-lg buttons" id="start">Start</button><br />
@@ -33,3 +37,9 @@ export default function () {
     </div>
   );
 }
+
+Clock.propTypes = propTypes;
+
+export default connect(
+  ({ currentSessionTime }) => ({ currentSessionTime })
+)(Clock);
