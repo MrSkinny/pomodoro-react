@@ -16,5 +16,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+export { store };
 
 // style source: https://codepen.io/naturalsoul/pen/gpNQOv

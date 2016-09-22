@@ -9,11 +9,12 @@ function forceDoubleDigits (num) {
 }
 
 function createTime (time) {
-  return { minutes: forceDoubleDigits(time / 60), seconds: forceDoubleDigits(time % 60) };
+  return { minutes: parseInt(time / 60, 10), seconds: forceDoubleDigits(time % 60) };
 }
 
 export default function ClockDisplay({ time }) {
   const { minutes, seconds } = createTime(time);
+  console.log(seconds);
 
   return (
     <div id="contentClock">

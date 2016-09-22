@@ -1,5 +1,8 @@
 import update from 'react-addons-update';
-import { INCREMENT_START_CLOCK_TIME, DECREMENT_START_CLOCK_TIME } from '../actions';
+import {
+  INCREMENT_START_CLOCK_TIME,
+  DECREMENT_START_CLOCK_TIME,
+  START_CLOCK, STOP_CLOCK, RESET_CLOCK, DECREMENT_CLOCK } from '../actions';
 
 /**
  * INCREMENT_START_CLOCK_TIME:
@@ -13,7 +16,8 @@ import { INCREMENT_START_CLOCK_TIME, DECREMENT_START_CLOCK_TIME } from '../actio
 const INITIAL_STATE = {
   startBreakTime: 300,
   startTimerTime: 1500,
-  currentSessionTime: 1500
+  currentSessionTime: 1500,
+  intervalId: null
 };
 
 function setStartClock (state, newTime, payload) {
@@ -33,6 +37,21 @@ export default function (state = INITIAL_STATE, action) {
     case DECREMENT_START_CLOCK_TIME:
       newTime = state[action.payload] - 60;
       return setStartClock(state, newTime, action.payload);
+
+    case DECREMENT_CLOCK:
+      return update(state, { currentSessionTime: { $set: state.currentSessionTime - 1 } });
+
+    case START_CLOCK:
+      console.log('reducer start');
+      return update(state, { intervalId: { $set: action.payload } });
+
+    case STOP_CLOCK:
+      console.log('stop clock!');
+      return update(state, { intervalId: { $set: null } });
+
+    case RESET_CLOCK:
+      console.log('reducer reset');
+      return state;
 
     default:
       return state;

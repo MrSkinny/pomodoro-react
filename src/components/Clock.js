@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import TimeSelection from './TimeSelection';
 import ClockDisplay from './ClockDisplay';
+import MainControls from './MainControls';
 
 const propTypes = {
   currentSessionTime: PropTypes.number.isRequired
@@ -22,11 +23,7 @@ function Clock ({ currentSessionTime }) {
               <section id="theClock">
                 <ClockDisplay time={currentSessionTime} />
               </section>
-              <section id="btnsTime">
-                <button className="btn btn-lg buttons" id="start">Start</button><br />
-                <button className="btn btn-lg buttons" id="pause">Pause</button><br />
-                <button className="btn btn-lg buttons" id="reset">Reset</button><br />
-              </section>
+              <MainControls />
             </div>
           </div>
         </div>
