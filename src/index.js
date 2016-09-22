@@ -17,5 +17,3 @@ ReactDOM.render(
 );
 
 export { store };
-
-// style source: https://codepen.io/naturalsoul/pen/gpNQOv
